@@ -1,0 +1,111 @@
+{
+  "dashboard": {
+    "categories": [
+      {
+        "id": "cspm_exec_dashboard",
+        "title": "CSPM Executive Dashboard",
+        "widgets": [
+          {
+            "id": "cloud_accounts_widget",
+            "type": "doughnut_chart",
+            "title": "Cloud Accounts",
+            "data": {
+              "labels": ["Connected", "Not Connected"],
+              "datasets": [
+                {
+                  "label": "Cloud Accounts",
+                  "data": [2, 2],
+                  "backgroundColor": ["#3b82f6", "#d1d5db"]
+                }
+              ]
+            }
+          },
+          {
+            "id": "cloud_account_risk_widget",
+            "type": "doughnut_chart",
+            "title": "Cloud Account Risk Assessment",
+            "data": {
+              "labels": ["Failed", "Warning", "Not available", "Passed"],
+              "datasets": [
+                {
+                  "label": "Risk Status",
+                  "data": [1689, 681, 36, 7253],
+                  "backgroundColor": [
+                    "#f87171",
+                    "#fbbf24",
+                    "#cbd5e1",
+                    "#34d399"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cwpp_dashboard",
+        "title": "CWPP Dashboard",
+        "widgets": [
+          {
+            "id": "namespace_specific_alerts_widget",
+            "type": "empty_widget",
+            "title": "Top 5 Namespace Specific Alerts",
+            "message": "No Graph data available!"
+          },
+          {
+            "id": "workload_alerts_widget",
+            "type": "empty_widget",
+            "title": "Workload Alerts",
+            "message": "No Graph data available!"
+          }
+        ]
+      },
+      {
+        "id": "registry_scan",
+        "title": "Registry Scan",
+        "widgets": [
+          {
+            "id": "image_risk_assessment_widget",
+            "type": "bar_chart",
+            "title": "Image Risk Assessment",
+            "data": {
+              "labels": ["Critical", "High", "Medium", "Low"],
+              "datasets": [
+                {
+                  "label": "Total Vulnerabilities",
+                  "data": [9, 150, 300, 450],
+                  "backgroundColor": [
+                    "#ef4444",
+                    "#f97316",
+                    "#facc15",
+                    "#4ade80"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "image_security_issues_widget",
+            "type": "bar_chart",
+            "title": "Image Security Issues",
+            "data": {
+              "labels": ["Critical", "High", "Medium", "Low"],
+              "datasets": [
+                {
+                  "label": "Total Images",
+                  "data": [2, 2, 5, 10],
+                  "backgroundColor": [
+                    "#ef4444",
+                    "#f97316",
+                    "#facc15",
+                    "#4ade80"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
